@@ -48,9 +48,9 @@ elif step == "📂 Items":
     with st.form("item_form"):
         item_type = st.selectbox("Item Type", ["Manuscript", "Book", "Article"])
         number_of_images = st.number_input("Number of Images", min_value=1, step=1)
-        file_format = st.selectbox("File Format", ["PDF", "JPEG", "TIFF"])
+        file_format = st.selectbox("File Format", ["JPEG", "TIFF", "PDF"])
         status = st.selectbox("Status", ["Approved", "Pending", "Rejected"])
-        platform = st.selectbox("Platform", ["Manara", "QDL", "Other"])
+        platform = st.selectbox("Platform", ["QDL", "e-discovery", "Other"])
         collections = st.text_area("Collections (comma-separated)").split(",")
 
         url = st.text_input("URL")
