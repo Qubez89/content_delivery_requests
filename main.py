@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import datetime, date
-from app.utils import get_mongodb_collection, convert_date
+from utils import get_mongodb_collection, convert_date
 
 
 collection = get_mongodb_collection()
