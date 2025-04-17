@@ -1,2 +1,0 @@
-[console_scripts]
-delivery-app = streamlit_app:main
