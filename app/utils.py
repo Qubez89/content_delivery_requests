@@ -1,8 +1,9 @@
 from datetime import datetime, date
 import pymongo
+import streamlit as st
 
 def get_mongodb_collection():
-    client = pymongo.MongoClient("MONGO_URI")
+    client = pymongo.MongoClient(st.secrets["MONGO_URI"])
     return client["content_delivery_requests"]["requests"]
 
 def convert_date(date_obj):
